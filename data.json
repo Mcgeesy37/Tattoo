@@ -1,0 +1,190 @@
+{
+  "studio": {
+    "name": "INKBLOOD STUDIO",
+    "tagline": "Tätowierungen mit Seele. Berlin.",
+    "founded": 2010,
+    "address": "Torstraße 142, 10119 Berlin",
+    "email": "ink@inkblood.de",
+    "phone": "+49 30 1234 5678",
+    "hours": {
+      "open": "Dienstag – Samstag",
+      "time": "11:00 – 20:00 Uhr"
+    },
+    "social": {
+      "instagram": "https://instagram.com/inkblood.studio",
+      "tiktok": "https://tiktok.com/@inkbloodstudio",
+      "pinterest": "https://pinterest.com/inkbloodstudio"
+    }
+  },
+
+  "artists": [
+    {
+      "id": "maya",
+      "name": "Maya S.",
+      "specialization": "Blackwork & Fineline",
+      "bio": "Ausgebildete Grafikerin, seit 2014 im Tattoo. Mayas Linienarbeit ist von japanischer Holzschnittkunst und europäischer Gravurtradition inspiriert.",
+      "years": 10,
+      "styles": ["Blackwork", "Fineline", "Botanical"],
+      "avatar": "initials",
+      "initials": "MS"
+    },
+    {
+      "id": "kai",
+      "name": "Kai R.",
+      "specialization": "Japonisme & Neo-Traditional",
+      "bio": "Aufgewachsen mit Manga-Kunst, verfeinert in Tokio. Kai bringt Edo-Ästhetik in den berliner Kontext — voluminös, farbrein, erzählerisch.",
+      "years": 8,
+      "styles": ["Japonisme", "Neo-Traditional", "Illustrativ"],
+      "avatar": "initials",
+      "initials": "KR"
+    },
+    {
+      "id": "lena",
+      "name": "Lena V.",
+      "specialization": "Geometric & Dotwork",
+      "bio": "Architekturstudium abgebrochen für die Nadel — und es war die beste Entscheidung. Lenas Symmetrien sind mathematisch exakt, ihre Mandalas meditativ.",
+      "years": 6,
+      "styles": ["Geometric", "Dotwork", "Sacred Geometry"],
+      "avatar": "initials",
+      "initials": "LV"
+    },
+    {
+      "id": "felix",
+      "name": "Felix D.",
+      "specialization": "Realism & Portraiture",
+      "bio": "Zehn Jahre klassische Malerei, fünf Jahre Tattooing. Felix reproduziert das Unmögliche auf Haut — Fotos, Gefühle, Erinnerungen.",
+      "years": 5,
+      "styles": ["Realism", "Portraiture", "Watercolor"],
+      "avatar": "initials",
+      "initials": "FD"
+    },
+    {
+      "id": "sara",
+      "name": "Sara M.",
+      "specialization": "Fineline & Watercolor",
+      "bio": "Zart ist nicht zerbrechlich. Saras Watercolor-Tattoos fließen wie echte Aquarelle — lebendig, farbig, unverwechselbar.",
+      "years": 7,
+      "styles": ["Fineline", "Watercolor", "Minimalist"],
+      "avatar": "initials",
+      "initials": "SM"
+    },
+    {
+      "id": "tom",
+      "name": "Tom B.",
+      "specialization": "Traditional & Bold",
+      "bio": "Old School ist nie out. Tom pflegt die Handwerktradition amerikanischer Seefahrer-Tattoos mit frischer Energie und zeitloser Symbolik.",
+      "years": 12,
+      "styles": ["Traditional", "Bold", "American Classic"],
+      "avatar": "initials",
+      "initials": "TB"
+    }
+  ],
+
+  "gallery": [
+    {
+      "id": "geo-wolf",
+      "title": "Geometrischer Wolf",
+      "style": "Blackwork",
+      "artist": "Maya S.",
+      "description": "Polygonaler Wolfskopf mit ineinander greifenden Dreiecken und Kreisen"
+    },
+    {
+      "id": "botanical",
+      "title": "Botanische Komposition",
+      "style": "Fineline",
+      "artist": "Sara M.",
+      "description": "Zarte Pflanzenstudie im Kupferstich-Stil"
+    },
+    {
+      "id": "mandala-silence",
+      "title": "Mandala der Stille",
+      "style": "Dotwork",
+      "artist": "Lena V.",
+      "description": "Achtstrahlige Mandalas aus feinen Punktreihen und geschwungenen Linien"
+    },
+    {
+      "id": "snake-dagger",
+      "title": "Dolch & Schlange",
+      "style": "Neo-Traditional",
+      "artist": "Kai R.",
+      "description": "Klassisches Memento-Mori-Motiv in satter Detailarbeit"
+    },
+    {
+      "id": "koi",
+      "title": "Koi no Tobira",
+      "style": "Japonisme",
+      "artist": "Kai R.",
+      "description": "Karpfen mit Schuppendetails und Wellenband im Irezumi-Stil"
+    },
+    {
+      "id": "sacred-geo",
+      "title": "Metatrons Würfel",
+      "style": "Geometric",
+      "artist": "Lena V.",
+      "description": "Heilige Geometrie mit Dreiecken, Kreisen und Sternen"
+    }
+  ],
+
+  "styles": [
+    { "name": "Blackwork", "description": "Reines Schwarz, maximale Wirkung. Rohe Kraft." },
+    { "name": "Fineline", "description": "Dünne Linien, hohe Präzision. Für das Subtile." },
+    { "name": "Japonisme", "description": "Edo-Ästhetik trifft Berliner Gegenwart." },
+    { "name": "Neo-Traditional", "description": "Klassische Motive, moderne Ausführung." },
+    { "name": "Dotwork", "description": "Unzählige Punkte ergeben das große Ganze." },
+    { "name": "Geometric", "description": "Mathematik als Kunst auf deiner Haut." },
+    { "name": "Watercolor", "description": "Aquarelleffekte — lebendig und fließend." },
+    { "name": "Realism", "description": "Wenn das Tattoo zur Fotografie wird." }
+  ],
+
+  "pricing": {
+    "hourly_rate": "120–180 €",
+    "minimum": "80 €",
+    "consultation": "kostenlos",
+    "deposit": "30% bei Buchung",
+    "note": "Endpreise nach persönlicher Beratung und Entwurf"
+  },
+
+  "faq": [
+    {
+      "q": "Wie lange dauert eine Session?",
+      "a": "Das hängt von Größe und Komplexität ab. Kleine Tattoos: 1–2 Stunden. Größere Werke: 4–8 Stunden, ggf. über mehrere Sessions."
+    },
+    {
+      "q": "Was muss ich vor dem Termin beachten?",
+      "a": "Gut schlafen, satt essen, keine Alkohol am Vortag. Bequeme Kleidung, die die Stelle gut zugänglich macht."
+    },
+    {
+      "q": "Macht es weh?",
+      "a": "Ja — aber es ist aushaltbar. Die Intensität variiert je nach Körperstelle. Wir machen Pausen, wenn du sie brauchst."
+    },
+    {
+      "q": "Wie lange dauert die Heilung?",
+      "a": "Die Oberfläche heilt in 2–3 Wochen. Das vollständige Einheilen der tieferen Schichten dauert 2–3 Monate."
+    },
+    {
+      "q": "Kann ich eigene Motive mitbringen?",
+      "a": "Natürlich. Referenzen helfen uns, deinen Geschmack zu verstehen. Wir gestalten das Motiv aber immer individuell neu."
+    }
+  ],
+
+  "testimonials": [
+    {
+      "name": "Janina K.",
+      "text": "Maya hat mein Tattoo so umgesetzt, wie ich es mir in meiner Vorstellung immer gewünscht habe. Einfach perfekt.",
+      "style": "Blackwork",
+      "rating": 5
+    },
+    {
+      "name": "Tobias M.",
+      "text": "Kais Koi ist ein absolutes Meisterwerk. Die Schuppen, die Bewegung — unfassbar. Bin schon beim dritten Tattoo.",
+      "style": "Japonisme",
+      "rating": 5
+    },
+    {
+      "name": "Lara S.",
+      "text": "Endlich ein Studio, das zuhört. Mein Mandala wurde genau das, was ich mir vorgestellt hatte.",
+      "style": "Dotwork",
+      "rating": 5
+    }
+  ]
+}
