@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INKBLOOD STUDIO — Tattoo & Art</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-text">INKBLOOD</span>
+      <span class="logo-sub">STUDIO</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" data-text="Über uns">Über uns</a></li>
+      <li><a href="#gallery" data-text="Galerie">Galerie</a></li>
+      <li><a href="#artists" data-text="Artists">Artists</a></li>
+      <li><a href="#contact" data-text="Kontakt">Kontakt</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Termin buchen</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about">Über uns</a></li>
+      <li><a href="#gallery">Galerie</a></li>
+      <li><a href="#artists">Artists</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+      <li><a href="#contact" class="mobile-cta">Termin buchen</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="ink-drop" id="inkDrop1"></div>
+      <div class="ink-drop" id="inkDrop2"></div>
+      <div class="ink-drop" id="inkDrop3"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal-up">
+        <span class="eyebrow-line"></span>
+        <span>Berlin · seit 2010</span>
+        <span class="eyebrow-line"></span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line reveal-up delay-1">DEINE</span>
+        <span class="title-line italic reveal-up delay-2">Geschichte</span>
+        <span class="title-line reveal-up delay-3">IN TINTE</span>
+      </h1>
+      <p class="hero-sub reveal-up delay-4">
+        Handgefertigte Tattoos für die, die sich trauen.<br />
+        Keine Templates. Nur Kunst.
+      </p>
+      <div class="hero-buttons reveal-up delay-5">
+        <a href="#gallery" class="btn btn-primary">Galerie entdecken</a>
+        <a href="#contact" class="btn btn-ghost">Termin anfragen</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <!-- Decorative SVG tattoo motifs -->
+    <div class="hero-deco deco-left">
+      <svg viewBox="0 0 120 400" xmlns="http://www.w3.org/2000/svg">
+        <line x1="60" y1="0" x2="60" y2="400" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4 8"/>
+        <circle cx="60" cy="60" r="20" fill="none" stroke="currentColor" stroke-width="0.8"/>
+        <path d="M40,60 Q60,20 80,60 Q60,100 40,60Z" fill="none" stroke="currentColor" stroke-width="0.6"/>
+        <circle cx="60" cy="200" r="8" fill="none" stroke="currentColor" stroke-width="0.8"/>
+        <path d="M52,200 L68,200 M60,192 L60,208" stroke="currentColor" stroke-width="0.6"/>
+        <path d="M45,320 Q60,290 75,320 Q60,350 45,320Z" fill="none" stroke="currentColor" stroke-width="0.6"/>
+      </svg>
+    </div>
+    <div class="hero-deco deco-right">
+      <svg viewBox="0 0 120 400" xmlns="http://www.w3.org/2000/svg">
+        <line x1="60" y1="0" x2="60" y2="400" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4 8"/>
+        <path d="M30,80 L90,80 L60,40 Z" fill="none" stroke="currentColor" stroke-width="0.8"/>
+        <path d="M30,80 L90,80 L60,120 Z" fill="none" stroke="currentColor" stroke-width="0.6"/>
+        <circle cx="60" cy="200" r="25" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="3 6"/>
+        <circle cx="60" cy="200" r="15" fill="none" stroke="currentColor" stroke-width="0.8"/>
+        <path d="M40,320 Q60,300 80,320 L70,360 L60,340 L50,360 Z" fill="none" stroke="currentColor" stroke-width="0.6"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span>BLACKWORK</span><span class="dot">✦</span>
+      <span>FINELINE</span><span class="dot">✦</span>
+      <span>JAPONISME</span><span class="dot">✦</span>
+      <span>NEO-TRADITIONAL</span><span class="dot">✦</span>
+      <span>REALISM</span><span class="dot">✦</span>
+      <span>GEOMETRIC</span><span class="dot">✦</span>
+      <span>DOTWORK</span><span class="dot">✦</span>
+      <span>WATERCOLOR</span><span class="dot">✦</span>
+      <span>BLACKWORK</span><span class="dot">✦</span>
+      <span>FINELINE</span><span class="dot">✦</span>
+      <span>JAPONISME</span><span class="dot">✦</span>
+      <span>NEO-TRADITIONAL</span><span class="dot">✦</span>
+      <span>REALISM</span><span class="dot">✦</span>
+      <span>GEOMETRIC</span><span class="dot">✦</span>
+      <span>DOTWORK</span><span class="dot">✦</span>
+      <span>WATERCOLOR</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-text">
+        <span class="section-label reveal-left">— Unser Ansatz</span>
+        <h2 class="section-title reveal-left delay-1">
+          Kunst, die<br /><em>bleibt.</em>
+        </h2>
+        <p class="about-body reveal-left delay-2">
+          Bei INKBLOOD glauben wir, dass Tätowierungen mehr sind als Dekoration.
+          Sie sind Kapitel deiner Geschichte — dauerhaft, bedeutsam, einzigartig.
+          Jedes Motiv entsteht im Dialog zwischen Artist und Kunde. Kein Druck,
+          keine Massenware. Nur ehrliche Handwerkskunst.
+        </p>
+        <div class="about-stats reveal-left delay-3">
+          <div class="stat">
+            <span class="stat-num" data-target="14">0</span>
+            <span class="stat-label">Jahre Erfahrung</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="3800">0</span>
+            <span class="stat-label">Tattoos gestochen</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="6">0</span>
+            <span class="stat-label">Artists im Team</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual reveal-right delay-2">
+        <div class="about-frame">
+          <div class="frame-inner">
+            <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" class="about-svg">
+              <!-- Large ornate rose -->
+              <circle cx="150" cy="160" r="80" fill="none" stroke="var(--gold)" stroke-width="0.5" opacity="0.3"/>
+              <circle cx="150" cy="160" r="55" fill="none" stroke="var(--gold)" stroke-width="0.3" opacity="0.5" stroke-dasharray="5 10"/>
+              <!-- Rose petals -->
+              <path d="M150,100 Q180,130 150,160 Q120,130 150,100Z" fill="none" stroke="var(--gold)" stroke-width="1.2"/>
+              <path d="M90,160 Q120,130 150,160 Q120,190 90,160Z" fill="none" stroke="var(--gold)" stroke-width="1.2"/>
+              <path d="M150,160 Q180,190 150,220 Q120,190 150,160Z" fill="none" stroke="var(--gold)" stroke-width="1.2"/>
+              <path d="M150,160 Q210,130 210,160 Q210,190 150,160Z" fill="none" stroke="var(--gold)" stroke-width="1.2"/>
+              <path d="M105,115 Q150,100 150,160 Q105,160 105,115Z" fill="none" stroke="var(--gold)" stroke-width="0.8" opacity="0.7"/>
+              <path d="M195,115 Q150,100 150,160 Q195,160 195,115Z" fill="none" stroke="var(--gold)" stroke-width="0.8" opacity="0.7"/>
+              <!-- Stem and leaves -->
+              <line x1="150" y1="240" x2="150" y2="360" stroke="var(--gold)" stroke-width="1.5"/>
+              <path d="M150,280 Q120,260 100,270 Q115,285 150,290Z" fill="none" stroke="var(--gold)" stroke-width="1"/>
+              <path d="M150,310 Q180,290 200,300 Q185,315 150,320Z" fill="none" stroke="var(--gold)" stroke-width="1"/>
+              <!-- Inner rose center -->
+              <circle cx="150" cy="160" r="18" fill="none" stroke="var(--gold)" stroke-width="1.5"/>
+              <circle cx="150" cy="160" r="8" fill="var(--gold)" opacity="0.4"/>
+              <!-- Corner ornaments -->
+              <path d="M20,20 L60,20 L20,60Z" fill="none" stroke="var(--cream)" stroke-width="0.5" opacity="0.3"/>
+              <path d="M280,20 L240,20 L280,60Z" fill="none" stroke="var(--cream)" stroke-width="0.5" opacity="0.3"/>
+              <path d="M20,380 L60,380 L20,340Z" fill="none" stroke="var(--cream)" stroke-width="0.5" opacity="0.3"/>
+              <path d="M280,380 L240,380 L280,340Z" fill="none" stroke="var(--cream)" stroke-width="0.5" opacity="0.3"/>
+            </svg>
+          </div>
+          <div class="frame-label">Original Flash Sheet · 2024</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="gallery" id="gallery">
+    <div class="gallery-header">
+      <span class="section-label reveal-up">— Portfolio</span>
+      <h2 class="section-title reveal-up delay-1">Ausgewählte<br /><em>Arbeiten</em></h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gi-1 reveal-up delay-1" data-style="Blackwork">
+        <div class="gi-inner">
+          <svg viewBox="0 0 280 350" xmlns="http://www.w3.org/2000/svg">
+            <!-- Geometric wolf -->
+            <polygon points="140,30 200,100 250,90 230,160 260,180 200,200 200,280 140,320 80,280 80,200 20,180 50,160 30,90 80,100" fill="none" stroke="var(--cream)" stroke-width="1.5"/>
+            <polygon points="140,60 185,115 140,170 95,115" fill="none" stroke="var(--cream)" stroke-width="1"/>
+            <circle cx="115" cy="105" r="8" fill="none" stroke="var(--cream)" stroke-width="1.2"/>
+            <circle cx="165" cy="105" r="8" fill="none" stroke="var(--cream)" stroke-width="1.2"/>
+            <path d="M125,135 Q140,150 155,135" fill="none" stroke="var(--cream)" stroke-width="1.2"/>
+            <line x1="140" y1="170" x2="140" y2="320" stroke="var(--cream)" stroke-width="0.5" stroke-dasharray="3 6"/>
+          </svg>
+        </div>
+        <div class="gi-overlay">
+          <span class="gi-style">Blackwork</span>
+          <span class="gi-name">Geometrischer Wolf</span>
+        </div>
+      </div>
+
+      <div class="gallery-item gi-2 reveal-up delay-2" data-style="Fineline">
+        <div class="gi-inner">
+          <svg viewBox="0 0 280 350" xmlns="http://www.w3.org/2000/svg">
+            <!-- Fine botanical -->
+            <line x1="140" y1="320" x2="140" y2="30" stroke="var(--cream)" stroke-width="0.8"/>
+            <path d="M140,280 Q90,240 60,200 Q90,195 140,230Z" fill="none" stroke="var(--cream)" stroke-width="0.6"/>
+            <path d="M140,240 Q190,200 220,160 Q190,155 140,190Z" fill="none" stroke="var(--cream)" stroke-width="0.6"/>
+            <path d="M140,190 Q90,150 70,110 Q100,108 140,145Z" fill="none" stroke="var(--cream)" stroke-width="0.6"/>
+            <path d="M140,150 Q185,110 205,70 Q175,72 140,115Z" fill="none" stroke="var(--cream)" stroke-width="0.6"/>
+            <!-- Flower top -->
+            <circle cx="140" cy="55" r="25" fill="none" stroke="var(--cream)" stroke-width="0.8"/>
+            <circle cx="140" cy="55" r="10" fill="none" stroke="var(--cream)" stroke-width="1"/>
+            <path d="M140,30 Q155,40 155,55 Q155,70 140,80 Q125,70 125,55 Q125,40 140,30Z" fill="none" stroke="var(--cream)" stroke-width="0.6"/>
+          </svg>
+        </div>
+        <div class="gi-overlay">
+          <span class="gi-style">Fineline</span>
+          <span class="gi-name">Botanische Komposition</span>
+        </div>
+      </div>
+
+      <div class="gallery-item gi-3 reveal-up delay-3" data-style="Dotwork">
+        <div class="gi-inner">
+          <svg viewBox="0 0 280 350" xmlns="http://www.w3.org/2000/svg">
+            <!-- Mandala dotwork -->
+            <circle cx="140" cy="175" r="120" fill="none" stroke="var(--cream)" stroke-width="0.3" stroke-dasharray="1 4"/>
+            <circle cx="140" cy="175" r="90" fill="none" stroke="var(--cream)" stroke-width="0.5"/>
+            <circle cx="140" cy="175" r="65" fill="none" stroke="var(--cream)" stroke-width="0.3"/>
+            <circle cx="140" cy="175" r="40" fill="none" stroke="var(--cream)" stroke-width="0.8"/>
+            <circle cx="140" cy="175" r="18" fill="none" stroke="var(--cream)" stroke-width="1"/>
+            <!-- Petals -->
+            <path d="M140,85 Q170,130 140,175 Q110,130 140,85Z" fill="none" stroke="var(--cream)" stroke-width="0.8"/>
+            <path d="M140,265 Q110,220 140,175 Q170,220 140,265Z" fill="none" stroke="var(--cream)" stroke-width="0.8"/>
+            <path d="M50,175 Q95,145 140,175 Q95,205 50,175Z" fill="none" stroke="var(--cream)" stroke-width="0.8"/>
+            <path d="M230,175 Q185,205 140,175 Q185,145 230,175Z" fill="none" stroke="var(--cream)" stroke-width="0.8"/>
+            <!-- Diagonal petals -->
+            <path d="M83,108 Q120,140 140,175 Q108,178 83,108Z" fill="none" stroke="var(--cream)" stroke-width="0.6"/>
+            <path d="M197,108 Q160,140 140,175 Q172,178 197,108Z" fill="none" stroke="var(--cream)" stroke-width="0.6"/>
+            <path d="M83,242 Q120,210 140,175 Q108,172 83,242Z" fill="none" stroke="var(--cream)" stroke-width="0.6"/>
+            <path d="M197,242 Q160,210 140,175 Q172,172 197,242Z" fill="none" stroke="var(--cream)" stroke-width="0.6"/>
+          </svg>
+        </div>
+        <div class="gi-overlay">
+          <span class="gi-style">Dotwork</span>
+          <span class="gi-name">Mandala der Stille</span>
+        </div>
+      </div>
+
+      <div class="gallery-item gi-4 reveal-up delay-1" data-style="Neo-Traditional">
+        <div class="gi-inner">
+          <svg viewBox="0 0 280 350" xmlns="http://www.w3.org/2000/svg">
+            <!-- Snake and dagger -->
+            <line x1="140" y1="30" x2="140" y2="320" stroke="var(--cream)" stroke-width="3"/>
+            <polygon points="140,30 125,55 140,50 155,55" fill="var(--cream)" opacity="0.9"/>
+            <path d="M140,100 Q170,130 160,160 Q150,190 170,210 Q190,230 170,260 Q150,280 140,320" fill="none" stroke="var(--gold)" stroke-width="2"/>
+            <circle cx="160" cy="145" r="6" fill="none" stroke="var(--gold)" stroke-width="1.2"/>
+            <!-- Snake head -->
+            <ellipse cx="175" cy="260" rx="18" ry="12" fill="none" stroke="var(--gold)" stroke-width="1.5"/>
+            <circle cx="180" cy="256" r="3" fill="var(--gold)" opacity="0.8"/>
+            <path d="M193,262 Q205,258 210,264 M193,264 Q205,262 210,268" fill="none" stroke="var(--gold)" stroke-width="0.8"/>
+          </svg>
+        </div>
+        <div class="gi-overlay">
+          <span class="gi-style">Neo-Traditional</span>
+          <span class="gi-name">Dolch & Schlange</span>
+        </div>
+      </div>
+
+      <div class="gallery-item gi-5 reveal-up delay-2" data-style="Japonisme">
+        <div class="gi-inner">
+          <svg viewBox="0 0 280 350" xmlns="http://www.w3.org/2000/svg">
+            <!-- Koi fish -->
+            <path d="M80,175 Q100,100 160,80 Q220,60 240,120 Q260,180 200,230 Q140,280 100,260 Q60,240 80,175Z" fill="none" stroke="var(--cream)" stroke-width="1.5"/>
+            <!-- Scales pattern -->
+            <path d="M120,140 Q130,130 140,140 Q130,150 120,140Z" fill="none" stroke="var(--cream)" stroke-width="0.6"/>
+            <path d="M140,130 Q150,120 160,130 Q150,140 140,130Z" fill="none" stroke="var(--cream)" stroke-width="0.6"/>
+            <path d="M160,140 Q170,130 180,140 Q170,150 160,140Z" fill="none" stroke="var(--cream)" stroke-width="0.6"/>
+            <path d="M130,155 Q140,145 150,155 Q140,165 130,155Z" fill="none" stroke="var(--cream)" stroke-width="0.6"/>
+            <path d="M150,160 Q160,150 170,160 Q160,170 150,160Z" fill="none" stroke="var(--cream)" stroke-width="0.6"/>
+            <path d="M170,155 Q180,145 190,155 Q180,165 170,155Z" fill="none" stroke="var(--cream)" stroke-width="0.6"/>
+            <!-- Eye -->
+            <circle cx="220" cy="115" r="8" fill="none" stroke="var(--cream)" stroke-width="1.2"/>
+            <circle cx="220" cy="115" r="3" fill="var(--cream)" opacity="0.8"/>
+            <!-- Tail -->
+            <path d="M85,180 Q50,160 30,140 M85,180 Q55,185 40,200 M85,180 Q60,200 50,225" fill="none" stroke="var(--cream)" stroke-width="1"/>
+            <!-- Waves -->
+            <path d="M60,280 Q90,265 120,280 Q150,295 180,280 Q210,265 240,280" fill="none" stroke="var(--cream)" stroke-width="0.8" opacity="0.5"/>
+            <path d="M40,300 Q70,285 100,300 Q130,315 160,300 Q190,285 220,300 Q250,315 270,300" fill="none" stroke="var(--cream)" stroke-width="0.8" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="gi-overlay">
+          <span class="gi-style">Japonisme</span>
+          <span class="gi-name">Koi no Tobira</span>
+        </div>
+      </div>
+
+      <div class="gallery-item gi-6 reveal-up delay-3" data-style="Geometric">
+        <div class="gi-inner">
+          <svg viewBox="0 0 280 350" xmlns="http://www.w3.org/2000/svg">
+            <!-- Sacred geometry -->
+            <polygon points="140,40 240,200 40,200" fill="none" stroke="var(--cream)" stroke-width="1.2"/>
+            <polygon points="140,310 40,150 240,150" fill="none" stroke="var(--cream)" stroke-width="1.2"/>
+            <circle cx="140" cy="175" r="80" fill="none" stroke="var(--cream)" stroke-width="0.8"/>
+            <circle cx="140" cy="175" r="55" fill="none" stroke="var(--gold)" stroke-width="0.5" stroke-dasharray="3 6"/>
+            <circle cx="140" cy="175" r="30" fill="none" stroke="var(--cream)" stroke-width="1"/>
+            <circle cx="140" cy="175" r="8" fill="var(--cream)" opacity="0.6"/>
+            <!-- Star lines -->
+            <line x1="140" y1="95" x2="140" y2="255" stroke="var(--cream)" stroke-width="0.4" opacity="0.5"/>
+            <line x1="72" y1="135" x2="208" y2="215" stroke="var(--cream)" stroke-width="0.4" opacity="0.5"/>
+            <line x1="72" y1="215" x2="208" y2="135" stroke="var(--cream)" stroke-width="0.4" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="gi-overlay">
+          <span class="gi-style">Geometric</span>
+          <span class="gi-name">Metatrons Würfel</span>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-more reveal-up delay-3">
+      <a href="#contact" class="btn btn-outline">Alle Arbeiten anfragen</a>
+    </div>
+  </section>
+
+  <!-- ARTISTS SECTION -->
+  <section class="artists" id="artists">
+    <div class="artists-header">
+      <span class="section-label reveal-up">— Das Team</span>
+      <h2 class="section-title reveal-up delay-1">Unsere<br /><em>Artists</em></h2>
+    </div>
+    <div class="artists-grid" id="artistsGrid">
+      <!-- Filled by script.js from data.json -->
+    </div>
+  </section>
+
+  <!-- PROCESS SECTION -->
+  <section class="process">
+    <div class="process-inner">
+      <div class="process-header">
+        <span class="section-label reveal-up">— Wie es funktioniert</span>
+        <h2 class="section-title reveal-up delay-1">Von der Idee<br /><em>zur Haut</em></h2>
+      </div>
+      <div class="process-steps">
+        <div class="step reveal-up delay-1">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>Beratung</h3>
+            <p>Wir sprechen über deine Idee, Platzierung, Stil und Bedeutung. Kein Termin ohne Verständnis.</p>
+          </div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step reveal-up delay-2">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>Design</h3>
+            <p>Dein Artist entwickelt einen individuellen Entwurf. Kein Flash — jedes Motiv wird neu gezeichnet.</p>
+          </div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step reveal-up delay-3">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>Session</h3>
+            <p>In entspannter Atmosphäre entsteht dein Tattoo. Hygiene und Präzision sind unser Standard.</p>
+          </div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step reveal-up delay-4">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h3>Aftercare</h3>
+            <p>Du bekommst detaillierte Pflegeratschläge. Wir sind auch danach für dich da.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="contact-bg">
+      <div class="contact-grid"></div>
+    </div>
+    <div class="contact-inner">
+      <div class="contact-info">
+        <span class="section-label reveal-left">— Kontakt</span>
+        <h2 class="section-title reveal-left delay-1">Bereit für<br /><em>dein Tattoo?</em></h2>
+        <p class="reveal-left delay-2">Schreib uns. Wir melden uns innerhalb von 48 Stunden. Kein Anliegen ist zu klein oder zu komplex.</p>
+        <div class="contact-details reveal-left delay-3">
+          <div class="contact-item">
+            <span class="ci-icon">✦</span>
+            <div>
+              <span class="ci-label">Studio</span>
+              <span class="ci-val">Torstraße 142, 10119 Berlin</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">✦</span>
+            <div>
+              <span class="ci-label">E-Mail</span>
+              <span class="ci-val">ink@inkblood.de</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">✦</span>
+            <div>
+              <span class="ci-label">Öffnungszeiten</span>
+              <span class="ci-val">Di–Sa · 11:00 – 20:00 Uhr</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal-right delay-2">
+        <form class="form" id="contactForm" novalidate>
+          <div class="form-group">
+            <input type="text" id="name" placeholder=" " required />
+            <label for="name">Dein Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder=" " required />
+            <label for="email">E-Mail Adresse</label>
+          </div>
+          <div class="form-group">
+            <select id="style">
+              <option value="" disabled selected>Stil wählen</option>
+              <option>Blackwork</option>
+              <option>Fineline</option>
+              <option>Japonisme</option>
+              <option>Neo-Traditional</option>
+              <option>Dotwork</option>
+              <option>Geometric</option>
+              <option>Watercolor</option>
+              <option>Realism</option>
+              <option>Noch unsicher</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="4" placeholder=" " required></textarea>
+            <label for="message">Deine Idee</label>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <span class="btn-text">Anfrage senden</span>
+            <span class="btn-icon">→</span>
+          </button>
+          <p class="form-note">* Terminbuchungen nur nach Beratungsgespräch möglich.</p>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="success-icon">✦</div>
+          <h3>Nachricht erhalten!</h3>
+          <p>Wir melden uns innerhalb von 48 Stunden.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span>INKBLOOD STUDIO</span>
+        <p>Tätowierungen mit Seele. Berlin.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">Über uns</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#artists">Artists</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="TikTok">TK</a>
+        <a href="#" aria-label="Pinterest">PT</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 INKBLOOD STUDIO. Alle Rechte vorbehalten.</span>
+      <span><a href="#">Impressum</a> · <a href="#">Datenschutz</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
